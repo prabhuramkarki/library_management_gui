@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap');
+
+/* General Styling */
+.root {
+    -fx-font-family: 'Montserrat', sans-serif;
+    -fx-background: linear-gradient(135deg, #2c3e50, #34495e); /* Correct property for gradient background */
+    -fx-padding: 20px;
+}
+
+/* Button Styling */
+.button {
+    -fx-font-size: 16px;
+    -fx-text-fill: white;
+    -fx-background-color: #3498db;
+    -fx-background-radius: 25px;
+    -fx-padding: 15px;
+    -fx-cursor: hand;
+    -fx-text-transform: uppercase;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.15), 5, 0, 0, 1);
+    -fx-pref-width: 250px; /* Fixed width for all buttons */
+    -fx-pref-height: 45px; /* Fixed height for all buttons */
+}
+
+.button:hover {
+    -fx-background-color: #2980b9;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.3), 8, 0, 0, 1);
+}
+
+.button:focused {
+    -fx-background-color: #3498db;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.3), 8, 0, 0, 1);
+}
+
+/* Label Styling */
+.label {
+    -fx-text-fill: #000000;
+    -fx-font-size: 16px;
+    -fx-font-weight: 700; /* Make font a bit bolder */
+    -fx-padding: 10px;
+}
+
+/* VBox Styling */
+.vbox {
+    -fx-spacing: 20px;
+    -fx-alignment: center; /* Center-align VBox contents */
+}
+
+/* Input Field Styling */
+.text-field {
+    -fx-background-color: #ecf0f1;
+    -fx-background-radius: 25px;
+    -fx-padding: 15px 20px;
+    -fx-font-size: 15px;
+    -fx-text-fill: #2c3e50;
+    -fx-border-color: transparent;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.1), 5, 0, 0, 1);
+}
+
+.text-field:focused {
+    -fx-background-color: #ffffff;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.15), 10, 0, 0, 1);
+}
+
+/* Input Label Styling */
+.input-label {
+    -fx-text-fill: black; /* Change label text color to black */
+    -fx-font-size: 16px;
+    -fx-font-weight: bold; /* Make font bold */
+    -fx-padding: 5px 0;
+}
+
+/* Drop-Down Menu Styling */
+.combo-box {
+    -fx-background-color: #ecf0f1;
+    -fx-background-radius: 25px;
+    -fx-border-color: #bdc3c7;
+    -fx-border-radius: 25px;
+    -fx-padding: 10px;
+    -fx-font-size: 15px;
+    -fx-text-fill: #2c3e50;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.1), 5, 0, 0, 1);
+}
+
+.combo-box .combo-box-popup {
+    -fx-background-color: #ecf0f1;
+    -fx-border-color: #bdc3c7;
+    -fx-border-radius: 25px;
+}
+
+.combo-box .combo-box-button {
+    -fx-background-color: #ecf0f1;
+    -fx-border-color: #bdc3c7;
+    -fx-border-radius: 25px;
+}
+
+.combo-box .combo-box-cell {
+    -fx-background-color: #ecf0f1;
+    -fx-text-fill: #2c3e50;
+}
+
+.combo-box .combo-box-cell:hover {
+    -fx-background-color: #bdc3c7;
+}
+
+/* Scene Styling */
+.scene {
+    -fx-background-color: transparent;
+}
